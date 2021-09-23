@@ -13,13 +13,10 @@ class MainActivity2 : AppCompatActivity() {
 
 
         val backBtn = findViewById<Button>(R.id.moveBack)
-
+        //버튼 클릭시 액티비티 종료
         backBtn.setOnClickListener {
             finish()
         }
-
-
-
     }
 
 }
