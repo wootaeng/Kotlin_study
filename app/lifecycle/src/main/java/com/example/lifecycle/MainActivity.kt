@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     val TAG: String = "로그"
 
+    lateinit var textV : TextView
 
 
     // 액티비티가 생성
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //레이아웃을 설정
         setContentView(R.layout.activity_main)
-
+        textV =findViewById(R.id.textV)
         Log.d(TAG, "MainActivity - onCreate() called")
     }
 
@@ -34,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        val textV : TextView = findViewById(R.id.textV)
+
         textV.visibility = View.VISIBLE
         textV.setText("onPause()")
 

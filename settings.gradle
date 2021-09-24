@@ -2,3 +2,4 @@ rootProject.name = "Kotlin_study"
 include ':app'
 include ':app:Intent'
 include ':app:lifecycle'
+include ':app:broadcastreceiver'
